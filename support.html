@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <title>Support | Oshino Index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="./assets/images/oshino-pon-de-ring-logo.png" alt="">
+                </span>
+
+                <span class="brand-copy">
+                    <span class="brand-name">Oshino Index</span>
+                    <span class="brand-japanese">忍野インデックス</span>
+                </span>
+            </a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open navigation menu"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a href="./index.html">Home</a>
+                <a href="./commands.html">Commands</a>
+                <a href="./update.html">Updates</a>
+                <a class="active" href="./support.html">Support</a>
+                <a href="./index.html#faq">FAQ</a>
+            </nav>
+
+            <a class="button button-small button-outline invite-nav"
+                href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                target="_blank" rel="noopener noreferrer">
+                Invite Bot
+            </a>
+        </div>
+    </header>
+
+    <main class="support-page">
+        <section class="support-hero">
+            <div class="container support-hero-grid">
+                <div class="reveal is-visible">
+                    <p class="eyebrow">
+                        <span>支援</span>
+                        <span class="eyebrow-divider"></span>
+                        <span>Support</span>
+                    </p>
+
+                    <h1>Help, contact,<br>and creator links.</h1>
+                </div>
+
+                <p class="reveal reveal-delay-1 is-visible">
+                    Use this page to report bugs, find general help, and contact
+                    the creator of Oshino Index.
+                </p>
+            </div>
+        </section>
+
+        <section class="support-directory">
+            <div class="container support-directory-layout">
+                <div class="support-options">
+                    <article class="support-row reveal">
+                        <span class="support-label">Bug reports</span>
+
+                        <div>
+                            <h2>Something not working?</h2>
+                            <p>
+                                Use <code>!mbug</code> in Discord to display the
+                                bug-report template. Include the command used,
+                                expected result, actual result, screenshots, and
+                                any useful notes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="support-row reveal reveal-delay-1">
+                        <span class="support-label">General help</span>
+
+                        <div>
+                            <h2>Unsure how a feature works?</h2>
+                            <p>
+                                Start with the command index. Each public command
+                                includes its purpose, category, and basic usage.
+                            </p>
+
+                            <a class="section-link" href="./commands.html">
+                                Open command index
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="support-row reveal reveal-delay-2">
+                        <span class="support-label">Updates</span>
+
+                        <div>
+                            <h2>Looking for recent changes?</h2>
+                            <p>
+                                Read the website changelog or use
+                                <code>!mupdates</code> inside Discord.
+                            </p>
+
+                            <a class="section-link" href="./update.html">
+                                View updates
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="social-card reveal reveal-delay-2">
+                    <div class="social-card-heading">
+                        <span class="social-card-kicker">Contact</span>
+
+                        <h2>Discord</h2>
+
+                        <p>
+                            Contact me directly or join the support server.
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <div class="social-row">
+                            <span class="social-platform">Discord Handle</span>
+                            <span class="social-handle">@forgotten.wasurerareta</span>
+                    
+                            <button class="copy-handle-button" type="button" data-copy="@forgotten.wasurerareta">
+                                Copy
+                            </button>
+                        </div>
+                    
+                        <a class="social-link" href="https://discord.gg/cTeZJSDPDY" target="_blank" rel="noopener noreferrer">
+                            <span class="social-platform">Server</span>
+                            <span class="social-handle">discord.gg/cTeZJSDPDY</span>
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-block">
+                <a class="footer-logo" href="./index.html">
+                    <span class="footer-brand">Oshino Index</span>
+                    <span class="footer-subtitle">忍野インデックス</span>
+                </a>
+
+                <p class="footer-description">
+                    A guide and changelog for the Oshino Index Discord bot.
+                </p>
+            </div>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <div>
+                    <span class="footer-heading">Explore</span>
+                    <a href="./index.html">Home</a>
+                    <a href="./commands.html">Commands</a>
+                    <a href="./update.html">Updates</a>
+                </div>
+
+                <div>
+                    <span class="footer-heading">Help</span>
+                    <a href="./support.html">Support</a>
+                    <a href="./index.html#faq">FAQ</a>
+                    <a href="./legal.html">Privacy &amp; Terms</a>
+                    <a
+                        class="footer-invite"
+                        href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Invite Bot
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Oshino Index</span>
+        </div>
+    </footer>
+</body>
+</html>

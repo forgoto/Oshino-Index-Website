@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
+    >
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Commands | Oshino Index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/commands.css">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/commands.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="./assets/images/oshino-pon-de-ring-logo.png" alt="">
+                </span>
+                <span class="brand-copy">
+                    <span class="brand-name">Oshino Index</span>
+                    <span class="brand-japanese">忍野インデックス</span>
+                </span>
+            </a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open navigation menu"
+            >
+                <span></span><span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a href="./index.html">Home</a>
+                <a class="active" href="./commands.html">Commands</a>
+                <a href="./update.html">Updates</a>
+                <a href="./support.html">Support</a>
+                <a href="./index.html#faq">FAQ</a>
+            </nav>
+
+            <a
+                class="button button-small button-outline invite-nav"
+                href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Invite Bot
+            </a>
+        </div>
+    </header>
+
+    <main class="commands-page">
+        <section class="commands-hero">
+            <div class="container commands-hero-grid">
+                <div class="commands-title reveal is-visible">
+                    <p class="eyebrow">
+                        <span>命令</span>
+                        <span class="eyebrow-divider"></span>
+                        <span>Public command index</span>
+                    </p>
+
+                    <h1>Every public<br>entry in one place.</h1>
+                </div>
+
+                <div class="commands-intro reveal reveal-delay-1 is-visible">
+                    <p>
+                        Search Oshino Index by command name, purpose, or category.
+                        Restricted, private, and user-specific commands are intentionally excluded.
+                    </p>
+
+                    <div class="command-count">
+                        <span id="visible-count">17</span>
+                        <small>visible commands</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="command-browser">
+            <div class="container command-browser-layout">
+                <aside class="command-sidebar">
+                    <label class="search-field">
+                        <span class="search-label">Search</span>
+                        <input
+                            id="command-search"
+                            type="search"
+                            placeholder="Type a command or keyword"
+                            autocomplete="off"
+                        >
+                    </label>
+
+                    <div class="command-filters" aria-label="Command categories">
+                        <button class="filter-button active" data-filter="all">
+                            <span>All</span><span>17</span>
+                        </button>
+                        <button class="filter-button" data-filter="start">
+                            <span>Getting Started</span><span>02</span>
+                        </button>
+                        <button class="filter-button" data-filter="profile">
+                            <span>Profile & Trust</span><span>03</span>
+                        </button>
+                        <button class="filter-button" data-filter="economy">
+                            <span>Economy & Items</span><span>05</span>
+                        </button>
+                        <button class="filter-button" data-filter="fortune">
+                            <span>Fortunes & Effects</span><span>02</span>
+                        </button>
+                        <button class="filter-button" data-filter="utility">
+                            <span>Utility</span><span>03</span>
+                        </button>
+                        <button class="filter-button" data-filter="fun">
+                            <span>Fun</span><span>02</span>
+                        </button>
+                    </div>
+
+                    <p class="sidebar-note">
+                        This index contains commands available to normal users.
+                        Private maintenance tools are not documented here.
+                    </p>
+                </aside>
+
+                <div class="command-index" id="command-grid">
+                    
+                    <article class="command-row"
+                        data-category="start"
+                        data-search="minfo info help information commands start getting started" id="minfo">
+                        <span class="command-row-number">01</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Getting Started</span>
+                                <h2><a class="command-permalink" href="#minfo">!minfo</a></h2>
+                            </div>
+
+                            <p>Open the main information page and see what Oshino Index can do.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!minfo</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!minfo">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="minfo">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="start"
+                        data-search="mtuto tutorial guide beginner start onboarding" id="mtuto">
+                        <span class="command-row-number">02</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Getting Started</span>
+                                <h2><a class="command-permalink" href="#mtuto">!mtuto</a></h2>
+                            </div>
+
+                            <p>Begin or continue the guided tutorial for the bot's main systems.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mtuto</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mtuto">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mtuto">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="profile"
+                        data-search="mprofile profile stats trust coins money inventory progress" id="mprofile">
+                        <span class="command-row-number">03</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Profile & Trust</span>
+                                <h2><a class="command-permalink" href="#mprofile">!mprofile</a></h2>
+                            </div>
+
+                            <p>View your coins, trust, inventory progress, and related profile information.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mprofile</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mprofile">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mprofile">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="profile"
+                        data-search="mtrust trust rank relationship progress bond" id="mtrust">
+                        <span class="command-row-number">04</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Profile & Trust</span>
+                                <h2><a class="command-permalink" href="#mtrust">!mtrust</a></h2>
+                            </div>
+
+                            <p>View trust information and your current relationship progress with Oshino.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mtrust</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mtrust">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mtrust">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="profile"
+                        data-search="mpat pat trust interaction cooldown bond" id="mpat">
+                        <span class="command-row-number">05</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Profile & Trust</span>
+                                <h2><a class="command-permalink" href="#mpat">!mpat</a></h2>
+                            </div>
+
+                            <p>Interact with Oshino through the pat system and gain trust when available.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mpat</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mpat">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mpat">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="economy"
+                        data-search="mwork work shift earn coins economy money" id="mwork">
+                        <span class="command-row-number">06</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Economy & Items</span>
+                                <h2><a class="command-permalink" href="#mwork">!mwork</a></h2>
+                            </div>
+
+                            <p>Complete a short work shift and earn coins.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mwork</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mwork">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mwork">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="economy"
+                        data-search="mshop shop buy purchase item coins economy" id="mshop">
+                        <span class="command-row-number">07</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Economy & Items</span>
+                                <h2><a class="command-permalink" href="#mshop">!mshop</a></h2>
+                            </div>
+
+                            <p>Browse the shop and purchase items using your coins.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mshop</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mshop">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mshop">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="economy"
+                        data-search="moffering offering feed food donut trust reward" id="moffering">
+                        <span class="command-row-number">08</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Economy & Items</span>
+                                <h2><a class="command-permalink" href="#moffering">!moffering</a></h2>
+                            </div>
+
+                            <p>Offer a food item to Oshino in exchange for trust and related rewards.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!moffering</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!moffering">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="moffering">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="economy"
+                        data-search="minv inventory items collection bag" id="minv">
+                        <span class="command-row-number">09</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Economy & Items</span>
+                                <h2><a class="command-permalink" href="#minv">!minv</a></h2>
+                            </div>
+
+                            <p>View the items currently stored in your inventory.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!minv</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!minv">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="minv">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="economy"
+                        data-search="mitem item use inventory charm cloak card" id="mitem">
+                        <span class="command-row-number">10</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Economy & Items</span>
+                                <h2><a class="command-permalink" href="#mitem">!mitem</a></h2>
+                            </div>
+
+                            <p>Use or manage supported non-food items from your inventory.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mitem</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mitem">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mitem">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="fortune"
+                        data-search="momikuji omikuji fortune luck blessing daily effect" id="momikuji">
+                        <span class="command-row-number">11</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Fortunes & Effects</span>
+                                <h2><a class="command-permalink" href="#momikuji">!momikuji</a></h2>
+                            </div>
+
+                            <p>Draw your fortune and receive a possible temporary effect.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!momikuji</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!momikuji">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="momikuji">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="fortune"
+                        data-search="meffects effects buffs debuffs omikuji duration active" id="meffects">
+                        <span class="command-row-number">12</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Fortunes & Effects</span>
+                                <h2><a class="command-permalink" href="#meffects">!meffects</a></h2>
+                            </div>
+
+                            <p>View your currently active positive and negative effects.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!meffects</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!meffects">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="meffects">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="utility"
+                        data-search="mpingme ping notify notification announcement opt in" id="mpingme">
+                        <span class="command-row-number">13</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Utility</span>
+                                <h2><a class="command-permalink" href="#mpingme">!mpingme</a></h2>
+                            </div>
+
+                            <p>Manage your opt-in preference for supported bot announcements.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mpingme</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mpingme">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mpingme">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="utility"
+                        data-search="mupdates updates changelog patch notes news" id="mupdates">
+                        <span class="command-row-number">14</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Utility</span>
+                                <h2><a class="command-permalink" href="#mupdates">!mupdates</a></h2>
+                            </div>
+
+                            <p>Read the latest available bot update notes.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mupdates</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mupdates">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mupdates">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="utility"
+                        data-search="mbug bug report feedback issue template" id="mbug">
+                        <span class="command-row-number">15</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Utility</span>
+                                <h2><a class="command-permalink" href="#mbug">!mbug</a></h2>
+                            </div>
+
+                            <p>Display the bug-report template and submission instructions.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mbug</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mbug">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mbug">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="fun"
+                        data-search="mono quote image card monogatari reply fun" id="mono">
+                        <span class="command-row-number">16</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Fun</span>
+                                <h2><a class="command-permalink" href="#mono">!mono</a></h2>
+                            </div>
+
+                            <p>Reply to a short message and turn it into a Monogatari-style quote card.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>Reply with !mono</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mono">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mono">Copy link</button>
+</div>
+                    </article>
+
+                    <article class="command-row"
+                        data-category="fun"
+                        data-search="mnya nya secret hidden fun easter egg" id="mnya">
+                        <span class="command-row-number">17</span>
+
+                        <div class="command-row-main">
+                            <div class="command-row-heading">
+                                <span class="command-category">Fun</span>
+                                <h2><a class="command-permalink" href="#mnya">!mnya</a></h2>
+                            </div>
+
+                            <p>Trigger a small hidden response from Oshino.</p>
+
+                            <div class="command-meta">
+                                <span>Usage</span>
+                                <code>!mnya</code>
+                            </div>
+                        </div>
+
+                        <div class="command-actions">
+    <button class="copy-command"
+                            type="button"
+                            data-command="!mnya">
+                            Copy
+                        </button>
+    <button class="copy-link" type="button" data-target="mnya">Copy link</button>
+</div>
+                    </article>
+
+
+                    <p class="empty-message" id="empty-message" hidden>
+                        No commands matched that search.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-block">
+                <a class="footer-logo" href="./index.html">
+                    <span class="footer-brand">Oshino Index</span>
+                    <span class="footer-subtitle">忍野インデックス</span>
+                </a>
+
+                <p class="footer-description">
+                    A guide and changelog for the Oshino Index Discord bot.
+                </p>
+            </div>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <div>
+                    <span class="footer-heading">Explore</span>
+                    <a href="./index.html">Home</a>
+                    <a href="./commands.html">Commands</a>
+                    <a href="./update.html">Updates</a>
+                </div>
+
+                <div>
+                    <span class="footer-heading">Help</span>
+                    <a href="./support.html">Support</a>
+                    <a href="./index.html#faq">FAQ</a>
+                    <a href="./legal.html">Privacy &amp; Terms</a>
+                    <a
+                        class="footer-invite"
+                        href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Invite Bot
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Oshino Index</span>
+        </div>
+    </footer>
+
+</body>
+</html>

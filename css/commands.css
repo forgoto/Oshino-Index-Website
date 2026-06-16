@@ -1,0 +1,339 @@
+.commands-page {
+    min-height: 100vh;
+    background: #050505;
+}
+
+.commands-hero {
+    padding: 108px 0 86px;
+    border-bottom: 1px solid var(--border);
+    background:
+        linear-gradient(90deg, rgba(214, 168, 79, 0.055), transparent 30%),
+        #050505;
+}
+
+.commands-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 90px;
+    align-items: end;
+}
+
+.commands-title h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(4.4rem, 7vw, 7.1rem);
+    font-weight: 600;
+    line-height: 0.88;
+    letter-spacing: -0.065em;
+}
+
+.commands-intro {
+    max-width: 520px;
+    padding-left: 26px;
+    border-left: 1px solid var(--border-strong);
+}
+
+.commands-intro > p {
+    margin: 0;
+    color: var(--text-soft);
+}
+
+.command-count {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.command-count span {
+    color: var(--accent-light);
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.command-count small {
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.command-browser {
+    padding: 72px 0 120px;
+    background: #090909;
+}
+
+.command-browser-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 70px;
+}
+
+.command-sidebar {
+    position: sticky;
+    top: 120px;
+    align-self: start;
+}
+
+.search-label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.search-field input {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 0 10px;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+}
+
+.search-field input:focus {
+    border-color: var(--accent);
+}
+
+.command-filters {
+    display: grid;
+    margin-top: 38px;
+    border-top: 1px solid var(--border);
+}
+
+.filter-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    color: var(--accent-light);
+}
+
+.sidebar-note {
+    margin: 34px 0 0;
+    color: var(--text-muted);
+    font-size: 0.79rem;
+    line-height: 1.7;
+}
+
+.command-index {
+    border-top: 1px solid var(--border);
+}
+
+.command-row {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr) auto;
+    gap: 28px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--border);
+    transition:
+        padding-left var(--transition),
+        border-color var(--transition);
+}
+
+.command-row:hover {
+    padding-left: 12px;
+    border-color: var(--border-strong);
+}
+
+.command-row.hidden {
+    display: none;
+}
+
+.command-row-number {
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+.command-row-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.command-category {
+    min-width: 75px;
+    color: var(--accent);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.command-row h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.045em;
+}
+
+.command-row p {
+    max-width: 620px;
+    margin: 12px 0 18px;
+    color: var(--text-soft);
+}
+
+.command-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.command-meta span {
+    color: var(--text-muted);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.command-meta code {
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+}
+
+.copy-command {
+    align-self: start;
+    min-width: 68px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.74rem;
+    cursor: pointer;
+}
+
+.copy-command:hover {
+    border-color: var(--accent);
+    color: var(--accent-light);
+}
+
+.empty-message {
+    padding: 50px 0;
+    color: var(--text-soft);
+}
+
+@media (max-width: 900px) {
+    .commands-hero-grid,
+    .command-browser-layout {
+        grid-template-columns: 1fr;
+        gap: 46px;
+    }
+
+    .command-sidebar {
+        position: static;
+    }
+
+    .command-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .commands-hero {
+        padding-block: 76px 60px;
+    }
+
+    .commands-title h1 {
+        font-size: clamp(4rem, 16vw, 5.8rem);
+    }
+
+    .commands-intro {
+        padding-left: 18px;
+    }
+
+    .command-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .command-row {
+        grid-template-columns: 1fr auto;
+    }
+
+    .command-row-number {
+        display: none;
+    }
+
+    .command-row-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .command-row p,
+    .command-meta {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ------------------------------
+   Command permalinks
+------------------------------ */
+
+.command-permalink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.command-permalink:hover {
+    color: var(--accent-light);
+}
+
+.command-actions {
+    display: grid;
+    gap: 8px;
+    align-self: start;
+}
+
+.copy-link {
+    min-width: 68px;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font: inherit;
+    font-size: 0.72rem;
+    cursor: pointer;
+}
+
+.copy-link:hover {
+    border-color: var(--accent);
+    color: var(--accent-light);
+}
+
+.command-row.linked-command {
+    border-color: var(--accent);
+    background:
+        linear-gradient(
+            90deg,
+            rgba(214, 168, 79, 0.07),
+            transparent 70%
+        );
+}
+
+.command-row:target {
+    scroll-margin-top: 120px;
+}

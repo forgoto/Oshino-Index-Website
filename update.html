@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'none'; manifest-src 'self'; upgrade-insecure-requests"
+    >
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Updates | Oshino Index</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="./index.html">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="./assets/images/oshino-pon-de-ring-logo.png" alt="">
+                </span>
+                <span class="brand-copy">
+                    <span class="brand-name">Oshino Index</span>
+                    <span class="brand-japanese">忍野インデックス</span>
+                </span>
+            </a>
+
+            <button
+                class="menu-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                aria-label="Open navigation menu"
+            >
+                <span></span><span></span>
+            </button>
+
+            <nav class="primary-navigation" id="primary-navigation">
+                <a href="./index.html">Home</a>
+                <a href="./commands.html">Commands</a>
+                <a class="active" href="./update.html">Updates</a>
+                <a href="./support.html">Support</a>
+                <a href="./index.html#faq">FAQ</a>
+            </nav>
+
+            <a
+                class="button button-small button-outline invite-nav"
+                href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Invite Bot
+            </a>
+        </div>
+    </header>
+
+    <main class="update-page">
+        <section class="update-hero">
+            <div class="container update-hero-grid">
+                <div>
+                    <p class="eyebrow">
+                        <span>更新</span>
+                        <span class="eyebrow-divider"></span>
+                        <span>Changelog</span>
+                    </p>
+
+                    <h1>Every version,<br>from the beginning.</h1>
+                </div>
+
+                <div class="update-hero-copy">
+                    <p>
+                        Each release is separated into its own entry, with changes
+                        grouped into clear categories.
+                    </p>
+
+                    <div class="update-summary">
+                        <span>11</span>
+                        <small>recorded releases</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="update-timeline-section">
+            <div class="container update-timeline">
+                
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">01</span>
+                            <span class="update-entry-type">Launch</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.0</p>
+                            <h2>Update 0 (Initial Launch) - Version 0.0.0</h2>
+                        </div>
+
+                        <time>22-12-2025</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li>Added <code>!mono</code></li>
+<li>Added <code>!minfo</code></li>
+<li>Added Easter 1,2,3 (1,2 Found by: Rei. 3 Found by: JK)</li>
+<li>Added <code>!mpat</code></li>
+<li>Added <code>!mnya</code></li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li>Implemented timed messages for certain dialogue options.</li>
+<li>!mono has been given 11 colors all with respective RNG rates.</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">02</span>
+                            <span class="update-entry-type">Update</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.1</p>
+                            <h2>Update 1 - Version 0.0.1</h2>
+                        </div>
+
+                        <time>23-12-2025</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li>Added <code>!mpunish1</code> (Exclusive to Forgotten)</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li>Reworked disappearing message (Refer to previous update) to make it so that all dialogue disappear except certain commands / dialogue</li>
+<li>Oshino now replies with 1 of 8 pre written messages for all user</li>
+<li>Oshino now replies with 1 of 5 pre written message for forgotten.wasurerareta</li>
+<li>!mpunish1 has dialogue for forgotten.wasurerareta</li>
+<li>!mpunish1 has dialogue for general users when attempting to use command.</li>
+<li>Interaction between Oshino and discord message being deleted revealing &quot;secret&quot; dialogue discovered! (Congratulations JK and Yui)</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">03</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.2</p>
+                            <h2>Update 1.1 (Hotfix) - Version 0.0.2</h2>
+                        </div>
+
+                        <time>Date not recorded</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li>Added <code>!mupdates</code> to view every update up to current dates.</li>
+<li>Added <code>!mbg3</code> (Exclusive to JK for discovering the &quot;secret&quot; message)</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li>Nothing this update.</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">04</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.3</p>
+                            <h2>Update 1.2 (Hotfix) - Version 0.0.3 (Merry Christmas)</h2>
+                        </div>
+
+                        <time>Date not recorded</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li>None added this update</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li>Added new ??? option (small easter egg hunt [No prizes for find])</li>
+<li>Added ??? surprise (Self triggered)</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">05</span>
+                            <span class="update-entry-type">Update</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.4</p>
+                            <h2>Update 2 (A Shift in value Update!) - Version 0.0.4</h2>
+                        </div>
+
+                        <time>18-01-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li>Added <code>!mwork</code> - Which brings users into a VN type work game.</li>
+<li>Added <code>!mprofile</code> - Allows users to view their stats. (Will re work in the near future)</li>
+<li>Added <code>!mshop</code> To buy Oshino donuts to feed (woo hoo!)</li>
+<li>Reworked <code>!mdonut</code> &amp; <code>!mpat</code> to now allow for functionality. (Refer to QOL notes)</li>
+<li>Redesigned <code>!minfo</code> &amp; <code>!mupdates</code>. (Refer to QOL notes)</li>
+<li>Added <code>!mtrust</code> - Shows detail stats about your trust levels (Refer to QOL notes)</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li><code>!minfo</code> &amp; <code>!mupdates</code> have gotten a new UI to allow for a cleaner look and without the clunkiness of the previous button designs.</li>
+<li><code>!mdonut</code> - Now allows users to feed Oshino which grants trust and with certain types of donuts. Give bonuses!</li>
+<li><code>!mpat</code> - Still preserves the same text and button, but has the added feature of giving trust for every pat. (Cooldown is 7 minutes per pat)</li>
+<li><code>!mwork</code> - Allows user to immerse themselves in that Shaboingboing McDonald&#x27;s simulator, with a VN style system that gives the user the option of choosing their dialogue. (Rare chance for Oshino to appear at work, granting trust and a tip if the correct options are chosen)</li>
+<li><code>!mtrust</code> - prints an image that shows your daily trust gained, cap and all that good stuff.</li>
+<li><code>!mono</code> - no longer goes out of bounds when the Japanese translation is too long.</li>
+<li><code>!mbgb</code> - This command is exclusive to (Rei) as good will for providing ideas. <strong>Easter Egg Hints</strong> - New Section :0</li>
+<li>I really like Yoyo&#x27;s, Oshino seems to too! Why don&#x27;t you try to nudge Oshino into showing you her Yoyo, the queen wouldn&#x27;t mind right?</li>
+<li>Seems like Oshino has been snooping around the kingdom :O, perhaps she found a cute little photo of someone! Try coaxing it out of her, I&#x27;m sure she&#x27;ll put up a fight even if you ask for it.</li>
+<li>Somethings might happen when you go to work, strange things are said to occur. Be careful out there. <strong>Special Mentions</strong> - Also new section :0</li>
+<li>Thank you so much <strong>Vanora</strong> for helping out in many ways, big ups to this dude</li>
+<li>Thank you to all the beta testers as well! I&#x27;ve had a bit of a weird schedule so the timings were rather weird weren&#x27;t they?</li>
+<li>And thank you to all <strong>YOU</strong> guys for showing Oshino so much support ;w;. Words cannot express how much i enjoyed creating Oshino.</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">06</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.5</p>
+                            <h2>Hotfix 1.0 - Version 0.0.5</h2>
+                        </div>
+
+                        <time>Date not recorded</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Changes</h3>
+                            <ul>
+                                <li><code>!mwork</code> now has a reduced cooldown. (12 hours &gt; 5 hours)</li>
+<li><code>!mwork</code> has now an increased chance to find the easter egg</li>
+<li>Fixed some backend issues (Server sides issues, Database recording optimizations)</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">07</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.5</p>
+                            <h2>Hotfix 1.1 - Version 0.0.5</h2>
+                        </div>
+
+                        <time>25-1-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Changes</h3>
+                            <ul>
+                                <li>Fixed a bug with <code>!mwork</code> after leaving the button away for a period of time will trigger the cooldown regardless.</li>
+<li><code>!mtrust</code> now allows for users to search other users. (Uses: !mtrust [username])</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">08</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.5</p>
+                            <h2>Hotfix 1.2 - Version 0.0.5</h2>
+                        </div>
+
+                        <time>26-1-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Changes</h3>
+                            <ul>
+                                <li>Added <code>!mpingme</code> that allows anyone to opt in for pinged announcements.</li>
+<li>Fixed a problem with <code>!mwork</code> not sending any messages.</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">09</span>
+                            <span class="update-entry-type">Hotfix</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.5</p>
+                            <h2>Hotfix 1.3 - Version 0.0.5</h2>
+                        </div>
+
+                        <time>26-1-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Changes</h3>
+                            <ul>
+                                <li>Fixed <code>!mpingme</code></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">10</span>
+                            <span class="update-entry-type">Update</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version 0.0.6</p>
+                            <h2>Update 3 (Let it rideeeeee Update) - Version 0.0.6</h2>
+                        </div>
+
+                        <time>30-03-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Command(s)</h3>
+                            <ul>
+                                <li><code>!momikuji</code> - Allows users to draw a fortune once every <strong>30 mintues</strong> (gacha!!!)</li>
+<li><code>!momikuji language</code> - Allows users to choose what language they wish to see their fortune in (Available in EN &amp; JP)</li>
+<li><code>!momikuji tie</code> - Allows users to tie their misfortunes 5 times per day, the shrine has lots of visitors you know?</li>
+<li><code>!mitem</code> - Allows users to use buff application items bought from <code>!mshop</code>.</li>
+<li><code>!minv</code> - Allows users to see what they have (duh!?)</li>
+<li><code>!mbuffs</code> - Allows users to see current buffs affected by items and <code>!momikuji</code>&#x27;s good fortunes.</li>
+<li><code>!mbgb</code> has been removed, the person who this was made for has lost my trust and was pretending to be someone new.</li>
+<li><code>!mshop</code> has new items added into it! Perhaps it&#x27;ll spice up your grind to the top &gt;:)</li>
+<li><code>!mdonut</code> has been changed to <code>!moffering</code> for better lore building.</li>
+<li><code>!mwork</code> has been patched to disable the &quot;rerolling&quot; bug.</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>QOL / General Features</h3>
+                            <ul>
+                                <li><code>!mwork</code> &amp; <code>!mpat</code> has been fixed to make it so that restarts on the bot does not reset cooldown timings.</li>
+<li><code>!mono</code> has new backgrounds! (Credits below)</li>
+<li>Pinged messages no longer delete themselves after 10 seconds (For any archivers out there)</li>
+<li>More Oshino Dialogues! (Includes: new ping messages, new rank ping messages, new interaction messages [Example: &quot;Hello Oshino])</li>
+<li>2 New work dialogue have been added (More will be added over the next few days)</li>
+                            </ul>
+                        </section>
+
+                        <section class="update-category-block">
+                            <h3>Special Mentions</h3>
+                            <ul>
+                                <li>Big thank you to all the artist who drew and allowed me to use their works.</li>
+<li>Thank you Vanora, Catz and Zenno. Please shower them with lots of love and compliment them for being a beautiful human being :D</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+                <article class="update-entry-card reveal">
+                    <header class="update-entry-top">
+                        <div class="update-entry-meta">
+                            <span class="update-entry-index">11</span>
+                            <span class="update-entry-type">Patch</span>
+                        </div>
+
+                        <div class="update-entry-title">
+                            <p>Version not listed</p>
+                            <h2>Small Patch 1</h2>
+                        </div>
+
+                        <time>08/06-2026</time>
+                    </header>
+
+                    <div class="update-entry-content">
+                        
+                        <section class="update-category-block">
+                            <h3>Patches implemented</h3>
+                            <ul>
+                                <li>!mshop now has the option to purchase items in bulk (able to purchase in 1, 2, 3, 4, 5, 10 and 25)</li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+<footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-block">
+                <a class="footer-logo" href="./index.html">
+                    <span class="footer-brand">Oshino Index</span>
+                    <span class="footer-subtitle">忍野インデックス</span>
+                </a>
+
+                <p class="footer-description">
+                    A guide and changelog for the Oshino Index Discord bot.
+                </p>
+            </div>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+                <div>
+                    <span class="footer-heading">Explore</span>
+                    <a href="./index.html">Home</a>
+                    <a href="./commands.html">Commands</a>
+                    <a href="./update.html">Updates</a>
+                </div>
+
+                <div>
+                    <span class="footer-heading">Help</span>
+                    <a href="./support.html">Support</a>
+                    <a href="./index.html#faq">FAQ</a>
+                    <a href="./legal.html">Privacy &amp; Terms</a>
+                    <a
+                        class="footer-invite"
+                        href="https://discord.com/oauth2/authorize?client_id=1451647176529678366&permissions=274878016512&integration_type=0&scope=bot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Invite Bot
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© 2026 Oshino Index</span>
+        </div>
+    </footer>
+</body>
+</html>
