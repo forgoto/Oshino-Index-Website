@@ -3203,47 +3203,95 @@ img {
 ------------------------------ */
 
 @media (max-width: 820px) {
-    body.menu-open {
-        overflow: hidden;
-    }
 
-    body.menu-open::before {
+    /* Stop the page from creating the blurry overlay */
+    body.menu-open::before,
+    body::before {
         display: none !important;
         content: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: transparent !important;
     }
 
+    body.menu-open {
+        overflow: hidden !important;
+    }
+
+    .site-header {
+        position: relative !important;
+        z-index: 1000 !important;
+    }
+
+    .nav-wrapper {
+        position: relative !important;
+        z-index: 1001 !important;
+    }
+
+    .menu-button {
+        position: relative !important;
+        z-index: 1003 !important;
+        display: grid !important;
+    }
+
+    /* Closed menu state */
     .primary-navigation {
         position: fixed !important;
-        top: calc(var(--header-height) + 12px) !important;
+        top: calc(var(--header-height) + 10px) !important;
         right: 16px !important;
         left: auto !important;
         bottom: auto !important;
+        inset: auto !important;
 
-        z-index: 999 !important;
+        z-index: 1002 !important;
+
+        width: min(280px, calc(100vw - 32px)) !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: calc(100dvh - var(--header-height) - 24px) !important;
+        overflow-y: auto !important;
+
+        margin: 0 !important;
+        padding: 10px !important;
 
         display: none !important;
-        width: min(280px, calc(100vw - 32px)) !important;
-        padding: 10px !important;
-        margin: 0 !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 0 !important;
 
         border: 1px solid var(--border-strong) !important;
         background: #080808 !important;
-        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.75) !important;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.8) !important;
 
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+
+        transition: none !important;
+    }
+
+    /* Open menu state */
+    .primary-navigation.open {
+        display: flex !important;
         transform: none !important;
         opacity: 1 !important;
         visibility: visible !important;
         pointer-events: auto !important;
     }
 
-    .primary-navigation.open {
-        display: grid !important;
-    }
-
     .primary-navigation a {
         display: block !important;
         width: 100% !important;
-        padding: 13px 14px !important;
+
+        padding: 14px 14px !important;
+        margin: 0 !important;
 
         border-bottom: 1px solid var(--border) !important;
         background: transparent !important;
@@ -3253,25 +3301,24 @@ img {
         font-size: 0.95rem !important;
         font-weight: 500 !important;
         line-height: 1.4 !important;
+        text-align: left !important;
+
+        transform: none !important;
     }
 
     .primary-navigation a:last-child {
         border-bottom: 0 !important;
     }
 
+    .primary-navigation a.active,
     .primary-navigation a:hover,
-    .primary-navigation a:focus-visible,
-    .primary-navigation a.active {
+    .primary-navigation a:focus-visible {
         color: var(--accent-light) !important;
         background: rgba(214, 168, 79, 0.08) !important;
     }
 
     .primary-navigation a.active::after {
         display: none !important;
-    }
-
-    .menu-button {
-        position: relative;
-        z-index: 1000 !important;
+        content: none !important;
     }
 }
